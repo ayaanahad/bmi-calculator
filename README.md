@@ -25,5 +25,8 @@ git clone https://github.com/YOUR-USERNAME/bmi-calculator.git
 ```
 2. Open `index.html` in your browser.
 
+## Live Demo Project
+- [BMI Calculator](https://www.bmicalculator.dev/)
+
 ## 📜 License
 This project is free to use with no restrictions.
