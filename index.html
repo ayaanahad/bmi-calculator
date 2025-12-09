@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <div class="container">
+        <h1>BMI Calculator</h1>
+
+        <div class="switch">
+            <label>
+                <input type="radio" name="unit" value="metric" checked onchange="toggleUnits()"> Metric
+            </label>
+            <label>
+                <input type="radio" name="unit" value="imperial" onchange="toggleUnits()"> Imperial
+            </label>
+        </div>
+
+        <div id="metric-inputs">
+            <div class="input-group">
+                <label>Height (cm)</label>
+                <input type="number" id="height" placeholder="Enter height in cm">
+            </div>
+
+            <div class="input-group">
+                <label>Weight (kg)</label>
+                <input type="number" id="weight" placeholder="Enter weight in kg">
+            </div>
+        </div>
+
+        <div id="imperial-inputs" style="display:none;">
+            <div class="input-group">
+                <label>Height (feet)</label>
+                <input type="number" id="feet" placeholder="Feet">
+            </div>
+
+            <div class="input-group">
+                <label>Height (inches)</label>
+                <input type="number" id="inches" placeholder="Inches">
+            </div>
+
+            <div class="input-group">
+                <label>Weight (lbs)</label>
+                <input type="number" id="pounds" placeholder="Pounds">
+            </div>
+        </div>
+
+        <button onclick="calculateBMI()">Calculate BMI</button>
+
+        <div id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
